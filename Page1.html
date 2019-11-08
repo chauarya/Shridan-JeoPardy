@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="Http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome Page</title>
+ <link rel="stylesheet" type="text/css" media="all"
+ href="../static/css/Assi1.css"
+ th:href="@{/css/Assi1.css}" />
+</head>
+<body  class="b2">
+<h1 class="p2" align="center">Welcome to Sheridan Jeopardy</h1>
+<img src="../static/images/jp.jpg"  th:src="@{/images/jp.jpg}" height="400PX" width="100%">
+
+
+</br></br></br>
+<div class="div1">
+ <form action="login" method="Get">
+<label class="lb1">Please enter your Name </label><input type="text" name="name"></br></br>
+<input class="btn1" type="submit" value="login"></form>
+</div>
+ 
+
+</body>
+</html>

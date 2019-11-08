@@ -1,0 +1,29 @@
+<html lang="en" xmlns:th="Http://www.thymeleaf.org">
+<head>
+<title>Page3</title>
+<link rel="stylesheet" type="text/css" media="all"
+ href="../static/css/Assi1.css"
+ th:href="@{/css/Assi1.css}" />
+
+</head>
+
+<body class="b3">
+<center>
+<pre class="p3"><span th:text="'Category:'+ ${session.name.catagory}"></span>                                         <span th:text="'Value:'+${session.name.value}"></span> </pre>
+<div class="Last">
+ 
+<h3><span th:text="${session.name.question}"></span></h3>
+<input type="radio" value="New York" name="york"><span th:text="${session.name.answer1}"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" value="Whashington" name="york"><span th:text="${session.name.answer2}"></span><br>
+<input type="radio" value="New jersey" name="york"><span th:text="${session.name.answer3}"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" value="North Carolina" name="york"><span th:text="${session.name.answer4}"></span><br><br><br> 
+
+<input class="btn2" type="button" value="Submit">
+<input class="btn2" type="button" value="Cancel">
+</div>
+</center>
+
+
+
+</body>
+</html>
